@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rucha">
+    <meta name="project" content="Student Registration system">
+    <title>Registration System for student</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h2>EnrollEase </h2>
+        <h4>Experience a seamless, efficient, and secure way to manage your academic journey.</h4>
+        <p>Effortless Student Enrollment and Administration...
+            EnrollEase facilitates seamless student enrollment and administration with robust functionalities for adding, updating, and removing students. This system offers a straightforward interface for registering new students, maintaining detailed records, and managing course enrollments. </p>
+
+        <img src="https://images.unsplash.com/20/cambridge.JPG?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+
+        <nav class="nav">
+               <a href="#form">Add New Students</a>
+               <a href="#update">Edit Student Details</a>
+               <a href="#update">Remove Students</a>
+        </nav>
+    </header>
+
+
+    <section>
+
+        <h2 class="head" id="form">Start Onboarding here..!!</h2>
+
+        <div class="container">
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="stud_Name">Student Name:</label>
+                    <input type="text" id="stud_Name" name="stud_Name" placeholder="Enter Student Name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="stud_ID">Student ID:</label>
+                    <input type="text" id="stud_ID" name="stud_ID" placeholder="Enter Student ID" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email ID">
+                </div>
+        
+                <div class="form-group">
+                    <label for="contact">Contact No.:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter Contact No." required>
+                </div>
+        
+                <div class="form-group">
+                    <input type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section>
+            <div class="table-container" id="update">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <p>copyright RK@2024</p>
+    </footer>
+    
+    <!-- added javascript code -->
+    <script src="script.js"></script>
+
+</body>
+</html>
